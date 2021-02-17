@@ -62,27 +62,27 @@
 %------------------------------------------------------------------------------
 % The following definitions are used to produce the title pages
 % needed at various stages
-\newcommand{\thesistitle}{Title of the Thesis}
-\newcommand*{\thesisauthor}{Author's name}
-\newcommand*{\thesistown}{Place of birth}
+\newcommand{\thesistitle}{Parametrisation of the power harvesting characteristics of Airborne Wind Energy devices}
+\newcommand*{\thesisauthor}{Lavinia Thimm}
+\newcommand*{\thesistown}{Altenkirchen (WW)}
 \renewcommand*{\InstituteName}{\PI}
 \renewcommand*{\inInstitute}{\inPI}
 \renewcommand*{\InstituteAddress}{\PIaddress}
 % Adjust \thesisreferee...text depending on male/female referee
 \newcommand*{\thesisrefereeonetext}{1.\ Gutachter}
-\newcommand*{\thesisrefereeone}{Prof.\ Dr.\ John Smith}
-\newcommand*{\thesisrefereetwotext}{2.\ Gutachterin}
-\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
+\newcommand*{\thesisrefereeone}{Priv.\ Doz.\ Philip Bechtle}
+\newcommand*{\thesisrefereetwotext}{2.\ Gutachter}
+\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Wer weiss ich nicht?}
 % Date when thesis was submitted (Master/Diplom)
 % Year or Month, Year when thesis was submitted (PhD)
-\newcommand*{\thesissubmit}{XX.YY.2018}
+\newcommand*{\thesissubmit}{XX.YY.2021}
 % \newcommand*{\thesissubmit}{Month 2018}
 % Date of thesis examination (PhD)
-\newcommand*{\thesispromotion}{XX.YY.2018}
+\newcommand*{\thesispromotion}{XX.YY.2021}
 % Month and year of the final printed version of the thesis
-\newcommand*{\thesismonth}{MMM}
-\newcommand*{\thesisyear}{2018}
-\newcommand*{\thesisnumber}{BONN-IR-2018-XXX}
+\newcommand*{\thesismonth}{Dec.}
+\newcommand*{\thesisyear}{2021}
+\newcommand*{\thesisnumber}{BONN-IR-2021-XXX}
 
 %------------------------------------------------------------------------------
 % The abstract is only needed for the printed version and should be in
@@ -101,6 +101,8 @@
 % comma after the filename, otherwise it will simply be ignored!
 % \includeonly{%
 %   thesis_intro,
+%	era5_wind_speed_data_analysis,
+%	wind_profile_clustering,
 %   thesis_appendix,
 %   thesis_acknowledge
 % }
@@ -191,6 +193,10 @@
 %------------------------------------------------------------------------------
 % Add your chapters here - don't forget to also add them to \includeonly above
 \include{thesis_intro}
+
+\include{era5_wind_speed_data_analysis}
+
+\include{wind_profile_clustering}
 % Uncomment the following command to get references per chapter.
 % Put it inside the file or change \include to \input if you do not want the references
 % on a separate page

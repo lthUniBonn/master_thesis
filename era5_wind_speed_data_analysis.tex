@@ -1,0 +1,58 @@
+% !TEX root = mythesis.tex
+
+%==============================================================================
+\chapter{ERA5 Wind Speed Data Analysis}
+\label{sec:era5-data}
+%==============================================================================
+\section{ERA5 Data}
+This section introduces the ERA5 dataset (parameters, model levels)
+
+introduction similar to Fiona - ref ERA5 documentation
+
+\textit{What are the errors on wind speeds to be expected from ERA5 data?}
+
+include locations inspected in detail: location map
+
+\subsection{Model Level Height Calculation}
+Explain principle of height calculation - ref Fiona \& website:  \url{https://confluence.ecmwf.int/display/CKB/ERA5%3A+compute+geopotential+on+model+levels}
+
+\textit{What are the errors on wind speeds and other params - height calc errors?}
+
+impact:\\
+sea no change\\ 
+land more change - less than paper (see height pdfs?)\\
+
+height/diff pdfs: shapes strongly impacted by local parameters
+
+diff pdfs:\\
+in total - consistent with model level and surface elevation calculation
+single location diffs - 
+
+\subsection{ERA5 Latitude-Longitude Grid Resolution}
+This shows via basic parameters the differences between the previously used rough grid and the now used fine grid (ALPES)\\
+mention gaussian grid, interpolation - different meaning of 1x1 and .25x.25 same point
+
+Chosen fine grid
+
+need for parallelisation (larger/more data) - ref to repo? 
+
+\subsection{Yearly Differences}
+show average wind speed pdfs for all years at one point for reference (same scales?)\\
+Yearly wind speed 100m for full map in appendix? 
+
+roughly quantify variation: max, min and overall mean wind speeds plus variance?
+
+Fiona cyclons / Cologne research reference? 
+
+Year by year differences observed $\rightarrow$ chosen range of 11 years\\
+
+\section{ERA5 Wind Speed Potential Reanalysis}
+what is processed? how does the processing work? explain meaning of percentiles: 
+\begin{itemize}
+\item 5: 95\% of time at least these wind speeds
+\item 32:
+\item 50: median
+\end{itemize}
+
+compare results w/ paper: map for 2011 to 2017 and 2010 to 2020 - changes? \\ 
+find update to paper conclusion? 
